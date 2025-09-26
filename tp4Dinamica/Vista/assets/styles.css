@@ -1,0 +1,257 @@
+/* CONTENEDORES PRINCIPALES */
+.contenedor {
+    width: 60%;
+    margin: auto;
+    min-height: 600px;
+    box-shadow: 0 0 10px rgba(228, 104, 104, 0.1);
+    border-radius: 10px;
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #fffbea; /* Fondo amarillo muy claro */
+}
+
+.container-supp {
+    min-height: 600px;
+    max-width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #eaf6ff; /* Celeste pastel */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* FORMULARIOS */
+.cont-form,
+.contenedor-form {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: flex-start;
+    min-height: 400px;
+    max-width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: #f3f9f4; /* Verde muy suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* RESPUESTAS */
+.respuestaBuscarAuto {
+    margin: auto;
+    margin-top: 20px;
+    max-width: 50%;
+    padding: 26px;
+    border-radius: 15px;
+    background-color: #fff; /* Fondo blanco */
+    box-shadow: 0 0 10px rgb(150, 150, 150);
+    transition: 0.5s ease-in-out;
+}
+
+.respuestaBuscarAuto:hover {
+    transform: translateY(-4px);
+    scale: 1.05;
+}
+
+/* BOTÓN PRINCIPAL */
+.btn-ingrese {
+    background-color: #ff9f1c; /* Naranja cálido */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-ingrese:hover {
+    background-color: #ff7a00;
+}
+
+/* RESPUESTAS DE CREACIÓN */
+.respPersonaCreada {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: flex-start;
+    min-height: 200px;
+    max-width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: #90ee90; /* Verde alegre */
+    color: #084c1e;
+}
+
+.respPersonaNoCreada {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: flex-start;
+    min-height: 200px;
+    max-width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: #ff6b6b; /* Rojo suave */
+    color: #fff;
+}
+
+/* ITEMS */
+.contenedorItems {
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+}
+
+/* MODALES */
+.modalDatosIncorrectos {
+    animation: entrada 1s ease-out;
+    background-color: #ff6b6b;
+    padding: 20px;
+    border-radius: 6px;
+    margin: 20px;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+}
+
+.modalDatosCorrectos {
+    animation: entradaDos 1s ease-out;
+    background-color: #81c784; /* Verde clarito */
+    padding: 20px;
+    border-radius: 6px;
+    margin: 20px;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+}
+
+@keyframes entrada {
+    from { opacity: 0; transform: translateY(-20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes entradaDos {
+    from { opacity: 0; transform: translateY(-20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* LINKS */
+.link {
+    display: block;
+    color: #6a5acd; /* Violeta alegre */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+.link:hover {
+    color: #483d8b;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #6c63ff; /* Violeta suave */
+    box-shadow: 0 4px 8px rgba(22, 207, 62, 0.1);
+    padding: 1rem;
+}
+
+.nav-item {
+    position: relative;
+    margin: 0 30px;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    color: #161414;
+    border-radius: 8px;
+    padding: 0.5rem 1.2rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #2fbd36; /* Amarillo alegre */
+    color: #22058a;
+    transform: scale(1.05);
+}
+
+.nav-item::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #d37777;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+}
+.nav-item:hover::after {
+    width: 100%;
+}
+
+.navbar-toggler {
+    border: 2px solid #fff;
+    transition: background-color 0.3s ease-in-out;
+}
+.navbar-toggler:hover {
+    background-color: #ffb703;
+}
+
+/* FOOTER */
+/* FOOTER COMPLETO PINTADO */
+.futer {
+    background-color: #2ecc71;  /* Verde sólido y alegre */
+    color: #fff;                 /* Texto blanco */
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 40px;
+    border-top: 3px solid #27ae60;
+}
+
+/* Ítems del footer */
+.futer .list-inline-item {
+    margin: 10px 20px;
+    font-size: 1.3rem;           /* un poquito más grande */
+    color: #fff;
+    font-weight: 600;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.futer .list-inline-item:hover {
+    color: #ffe066;  /* Amarillo pastel al pasar el mouse */
+    transform: scale(1.1);       /* efecto ligero de zoom */
+}
+
+/* TÍTULOS PRINCIPALES */
+h1, h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    color: #1b4332; /* verde oscuro elegante */
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* INICIO más grande */
+h1 {
+    font-size: 3rem;  /* más grande que h2 */
+}
+
+/* INTEGRANTES un poco más pequeño que h1 */
+h2 {
+    font-size: 2.5rem;
+}
+
+/* NOMBRES DE INTEGRANTES */
+.lista-integrantes li {
+    font-size: 2rem;           /* un poco más pequeño que h2 */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px 0;
+    color: #1b4332;            /* verde oscuro chic */
+    text-align: center;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
